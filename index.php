@@ -67,6 +67,49 @@
 <br>
 
 
+<image class="img-responsive" src="Capture.png" alt="LigaPH" style="width:100%" style ="height:100%">
+<image class="img-responsive" src="organize.png" alt="LigaPH" style="width:100%" style="height:100%"> 
+
+
+<!--LOG IN MODAL-->
+   <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+   <div class="modal-dialog">
+   <div class="modal-content">
+   <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h1 class="text-center">Login</h1>
+  </div>
+  <div class="modal-body">
+      
+        <div class="form-group">
+        
+          <input type="text" class="form-control input-lg" placeholder="Username" required="">
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control input-lg" placeholder="Password" required="">
+        </div>
+
+
+        <div class="form-group">
+          <button class="btn btn-primary btn-lg btn-block">Sign In</button>
+                    <span class="pull-right">
+                      <a data-toggle="modal" data-target="#chooseModal">Register</a></span>
+                    <span><a href="#">Need help?</a></span>
+                  </div>
+              </form>
+          </div>
+             <div class="modal-footer">
+             <div class="col-md-12">
+             <button class= "btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
+            </div>    
+          </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
 <!--Choose Registration-->               
 <div id="chooseModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
    <div class="modal-dialog">
@@ -99,48 +142,6 @@
         </div>
       </div>
     </div>
-
-
-
-<!--LOG IN MODAL-->
-   <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-   <div class="modal-dialog">
-   <div class="modal-content">
-   <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      <h1 class="text-center">Login</h1>
-  </div>
-  <div class="modal-body">
-      
-        <div class="form-group">
-        
-          <input type="text" class="form-control input-lg" placeholder="Username" required="">
-        </div>
-
-        <div class="form-group">
-          <input type="password" class="form-control input-lg" placeholder="Password" required="">
-        </div>
-
-
-        <div class="form-group">
-          <button class="btn btn-primary btn-lg btn-block">Sign In</button>
-                    <span class="pull-right">
-                      <a data-toggle="modal" data-target="#registerModal">Register</a></span>
-                    <span><a href="#">Need help?</a></span>
-                  </div>
-              </form>
-          </div>
-             <div class="modal-footer">
-             <div class="col-md-12">
-             <button class= "btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
-            </div>    
-          </div>
-             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-     
 
  <!--TEAM REGISTRATION MODAL-->
     <div id="teamModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
@@ -237,13 +238,6 @@
     </div>
 
 
-
-
-<image class="img-responsive" src="Capture.png" alt="LigaPH" style="width:100%" style ="height:100%"><image class="img-responsive" src="organize.png" alt="LigaPH" style="width:100%" style="height:100%"> 
-
-
-
-     
       
 </form>
 
