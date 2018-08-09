@@ -52,11 +52,11 @@
 
         <li><a href="team.php">Teams</a></li>
         <li><a href="players.php">Players</a></li>
-        <li><a href="#">Game Recap</a></li>
-        <li><a href="about.php">About</a></li>
+        <li><a href="bootstrap 3/organizerprofile.php">Game Recap</a></li>
+        <li><a href=" ">About</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a data-toggle="modal" data-target="#registerModal"></span>Register</a></li>
+        <li><a data-toggle="modal" data-target="#chooseModal"></span>Register</a></li>
         <li><a data-toggle="modal" data-target="#loginModal"></span>Login</a></li>
     </div>
   </div>
@@ -66,6 +66,43 @@
 <br>
 <br>
 
+
+<!--Choose Registration-->               
+<div id="chooseModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+   <div class="modal-dialog">
+   <div class="modal-content">
+   <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h1 class="text-center">Register as</h1>
+  </div>
+  <div class="modal-body">
+      
+       <div class="form-group">
+
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="teambutton" class="btn" data-toggle="modal" data-target="#teamModal">Team</button>
+      
+         <button type="button" class="btn btn-primary btn-lg btn-block" id="organizerbutton" class="btn" data-toggle="modal" data-target="#organizerModal">Organizer</button>
+          
+            </div>     
+              
+              <span class="pull-left">
+                    <span><a href="#">Need help?</a></span>  
+                  </span>
+
+              <div class="modal-footer">
+                <div class="col-md-12">
+              <button class= "btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                </div>  
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<!--LOG IN MODAL-->
    <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
    <div class="modal-dialog">
    <div class="modal-content">
@@ -79,12 +116,16 @@
         
           <input type="text" class="form-control input-lg" placeholder="Username" required="">
         </div>
+
         <div class="form-group">
           <input type="password" class="form-control input-lg" placeholder="Password" required="">
         </div>
+
+
         <div class="form-group">
           <button class="btn btn-primary btn-lg btn-block">Sign In</button>
-                    <span class="pull-right"><a data-toggle="modal" data-target="#registerModal">Register</a></span>
+                    <span class="pull-right">
+                      <a data-toggle="modal" data-target="#registerModal">Register</a></span>
                     <span><a href="#">Need help?</a></span>
                   </div>
               </form>
@@ -94,12 +135,15 @@
              <button class= "btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
             </div>    
           </div>
+             </div>
+          </div>
         </div>
       </div>
     </div>
- <image class="img-responsive" src="Capture.png" alt="LigaPH" style="width:100%" style ="height:100%"><image class="img-responsive" src="organize.png" alt="LigaPH" style="width:100%" style="height:100%"> 
      
-    <div id="registerModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+
+ <!--TEAM REGISTRATION MODAL-->
+    <div id="teamModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
    <div class="modal-dialog">
    <div class="modal-content">
    <div class="modal-header">
@@ -127,8 +171,8 @@
             <label class="pull-left"><b>Team Coach</b></label>
                  <input type="text" class="form-control" placeholder="Team Coach" required=""><br>
                  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>  
-                 <button class="btn btn-primary btn-lg btn-block">Submit</button><br>
-
+                 <button class="btn btn-primary btn-lg btn-block">Submit</button>
+                 <br>
               
                     </div>
                     </form>
@@ -139,9 +183,66 @@
              <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
             </div>    
                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                  
-              
+ <!--ORGANIZER REGISTRATION MODAL-->
+    <div id="organizerModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+   <div class="modal-dialog">
+   <div class="modal-content">
+   <div class="modal-header">
+    <center>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><br>
+      <h1 class="center">Organizer Registration Form</h1>
+      <h5 class="pull-left">Please fill in this form to create an account.</h5>
+  <div class="modal-body">
+      <form class="center-blocked">
+         <div class="container col-md-12">
+            <br>
+
+             <label class="pull-left"><b>Username</b></label>
+              <input type="text" class="form-control" placeholder="Username" required=""><br>
+
+              <label class="pull-left"><b>Password</b></label> 
+                <input type="password" class="form-control" placeholder="Password" required=""><br> 
+
+             <label class="pull-left"><b>Retype Password</b></label> 
+                <input type="password" class="form-control" placeholder="Retype Password" required=""><br>
+
+            <label class="pull-left"><b>First Name</b></label> 
+                <input type="text" class="form-control" placeholder="First Name" required=""><br>  
+
+            <label class="pull-left"><b>Last Name</b></label>
+                 <input type="text" class="form-control" placeholder="Last Name" required=""><br>
+
+                 <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>  
+                 <button class="btn btn-primary btn-lg btn-block">Submit</button>
+                 <br>
+                    </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+             <div class="col-md-12">
+             <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
+            </div>    
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<image class="img-responsive" src="Capture.png" alt="LigaPH" style="width:100%" style ="height:100%"><image class="img-responsive" src="organize.png" alt="LigaPH" style="width:100%" style="height:100%"> 
+
+
+
      
       
 </form>
